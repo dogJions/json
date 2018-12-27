@@ -2,13 +2,26 @@ package com.fym.tool;
 
 public class Count {
 
-    public  int test_1(String all){
-        for(int i=0;i<all.length();i++) {
-            char ch = all.charAt(i);
-            System.out.print(ch+"\t");
-        }
-        System.out.println("=============");
+    public double count_1(char ch,double number1,double number2){
 
-            return 0;
+        double sum=0;
+
+        switch (ch){
+            case '+':
+                 sum=number1+number2;
+                break;
+            case '-':
+                sum=number1-number2;
+                break;
+            case '*':
+                sum=number1*number2;
+                break;
+            case '/':
+                sum=number1/number2;
+                break;
+        }
+        return sum;
     }
+
+
 }
